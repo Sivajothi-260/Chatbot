@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot | Premium Intelligent Assistant</title>
+    <meta name="description"
+        content="Experience the next generation of AI with Chatbot - powerful, elegant, and intelligent.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+    </div>
+
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-card">
+            <div class="loading-emoji">🤖</div>
+            <div class="loading-title">Warming up Chatbot</div>
+            <div class="loading-subtitle">Preparing a fresh space for your ideas...</div>
+            <div class="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <main class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo-icon">
+                    <i data-lucide="cpu"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>Chatbot</h1>
+                    <span class="version-tag">ASSISTANT</span>
+                </div>
+            </div>
+
+            <nav class="chat-history">
+                <div class="nav-label">Workspace</div>
+                <button class="nav-item active">
+                    <i data-lucide="layout"></i>
+                    <span>Main Chat</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar-container">
+                        <div class="avatar">SJ</div>
+                        <div class="avatar-ring"></div>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Chatbot</span>
+                        <span class="user-badge">Virtual Assistant</span>
+                    </div>
+                </div>
+                <button class="settings-btn" title="System Settings">
+                    <i data-lucide="settings"></i>
+                </button>
+            </div>
+        </aside>
+
+        <section class="chat-interface">
+            <header class="chat-header">
+                <div class="header-info">
+                    <div class="model-badge">
+                        <i data-lucide="zap"></i>
+                        <span>Chatbot</span>
+                    </div>
+                    <div class="header-main">
+                        <h2>Chatbot Conversation</h2>
+                        <div class="status-indicator">
+                            <span class="status-dot"></span>
+                            <span class="status-text">Online</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="action-btn" id="theme-toggle" title="Toggle Theme">
+                        <i data-lucide="moon"></i>
+                    </button>
+                    <button class="action-btn" title="Clear History">
+                        <i data-lucide="refresh-cw"></i>
+                    </button>
+                    <button class="action-btn primary-action" title="New Session">
+                        <i data-lucide="plus"></i>
+                        <span>New</span>
+                    </button>
+                </div>
+            </header>
+
+            <div class="messages-container" id="messages-container">
+                <div class="message system-date">
+                    <span>Today with Chatbot</span>
+                </div>
+                <div class="message ai-message">
+                    <div class="message-content">
+                        <div class="ai-burst"></div>
+                        <h4>Hi,how can i help you 🤖</h4>
+                        <p>Ask me anything — from helping with code and writing to answering questions or brainstorming new ideas.</p>
+                        <div class="quick-prompts">
+                            <button class="quick-prompt-btn" data-prompt="Explain this concept in simple words: ">
+                                Learn a concept
+                            </button>
+                            <button class="quick-prompt-btn" data-prompt="Help me write: ">
+                                Write something
+                            </button>
+                            <button class="quick-prompt-btn" data-prompt="Fix this code and explain: ">
+                                Fix my code
+                            </button>
+                        </div>
+                        <span class="timestamp">09:12 AM</span>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="input-area">
+                <div class="input-wrapper">
+                    <div class="input-container">
+                        <div class="input-actions-left"></div>
+                            <textarea id="user-input" placeholder="Write a message or ask Chatbot for help..." rows="1"></textarea>
+                        <div class="input-actions-right">
+                            <button class="send-btn" id="send-btn" title="Send message">
+                                <i data-lucide="arrow-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="input-footer">
+                        <span>Powered by Chatbot · Fast • Smart • Secure</span>
+                        <div class="footer-links">
+                            <a href="#">Security</a>
+                            <a href="#">Ethics</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
