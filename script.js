@@ -58,7 +58,7 @@ document.addEventListener('click', (e) => {
 });
 
 // Gemini API Configuration
-const GEMINI_API_KEY = "AIzaSyAEzLwUSo2XUA3ORX3qPuzYx5zN7nHexEw";
+const GEMINI_API_KEY = "AIzaSyC67oTpcV7_1zQojTuNJKCisRIDpefHVgI";
 const MODEL = "gemini-2.5-flash"; // Manually set to v2.5 as requested
 
 async function getAIResponse(userText) {
